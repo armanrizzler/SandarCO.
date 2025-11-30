@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Successful</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f0f4ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        background: #fff;
+        width: 350px;
+        padding: 40px 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        animation: fadeIn 0.8s ease;
+    }
+
+    .checkmark {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #222831;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+        animation: pop 0.5s ease forwards;
+    }
+
+    .checkmark svg {
+        width: 45px;
+        fill: #fff;
+    }
+
+    h1 {
+        margin: 0;
+        color: #333;
+        font-size: 26px;
+    }
+
+    p {
+        color: #555;
+        margin: 10px 0 25px;
+        font-size: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #222831;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #222831
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0);   }
+    }
+
+    @keyframes pop {
+        0%   { transform: scale(0); }
+        100% { transform: scale(1); }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <div class="checkmark">
+        <svg viewBox="0 0 52 52">
+            <path d="M26,0C11.6,0,0,11.6,0,26s11.6,26,26,26s26-11.6,26-26S40.4,0,26,0z M21,39L7,25l4.2-4.2L21,30.6L40.8,10l4.2,4.2L21,39z"/>
+        </svg>
+    </div>
+
+    <h1>Login Successful</h1>
+    <p>Welcome back! You have logged in successfully.</p>
+    <a href="http://localhost/webshirt/homepage.html" class="btn">Continue</a>
+</div>
+
+</body>
+</html>

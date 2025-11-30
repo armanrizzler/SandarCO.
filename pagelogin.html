@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 7%;
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+           padding-left: 250px;
+           padding-right: 250px;
+           background-color: white;
+        }
+        .username , .password , .btn {
+            width: 150px;
+            align-items: center;
+            
+            
+        }
+        .container {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 50px;
+            border-radius: 2em;
+            padding-top: 20px;
+            background-color: #222831;
+            animation: fadeIn 0.5s ease;
+        }
+        .tombol_login {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .tombol_tutup {
+            text-align: right;
+            font-size: 24px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+            line-height: 1;
+            text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0);   }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://localhost/webshirt/homepage.html" class="tombol_tutup">&times;</a>
+        <div class="tombol_login">
+            <label for="">LOGIN</label>
+            <input type="text" placeholder="Username"name="Username" class="username" required>
+            <input type="password" placeholder="Password" name="Password" class="password" required>
+            <a href="http://localhost/webshirt/loginsucces.html">
+                <button type="submit" class="btn">Masuk</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

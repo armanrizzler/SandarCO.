@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POINT - Product</title>
+    <style>
+        
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            gap: 2rem;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            gap: 20%;
+            background-color: white;
+            border-radius: 2rem;
+            position: sticky;   
+            top: 0;           
+            z-index: 1000;     
+            background: white; 
+            height: 90px;
+            width: auto;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        .logo {
+            width: 10rem;
+            height: 7rem;
+            border-radius: 10px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            align-self: center;
+            width: 30%;
+            color: black;
+            align-items: center;
+        }
+        .link {
+            color: black;
+            text-decoration: none;
+            padding: 7px;
+        }
+         .link:hover {
+            background-color: gray;
+        }
+         section {
+            gap: 2rem;
+            padding: 2em;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+
+        }
+        .shirt_img {
+            height: auto;
+            width: 480px;
+            border-radius: 2em;
+            animation: right 0.6s ease;
+        }
+        .product_detail {
+            padding-left: 2em;
+            animation: left 0.6s ease;
+        }
+        .size {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-bottom: 3em;
+        }
+        .size_chart {
+            border: 2px solid black ;
+            width: 80px;
+            border-radius: 1.5rem;
+            padding: 7px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #sz1:checked + .size_chart,
+        #sz2:checked + .size_chart,
+        #sz3:checked + .size_chart,
+        #sz4:checked + .size_chart {
+            background: gray;
+        }
+
+        .buy {
+            border: 2px solid black;
+            border-radius: 1.5rem;
+            padding: 7px;
+            text-align: center;
+            width: 300px;
+            margin: 10em;
+            text-decoration: none;
+            color: black
+        }
+        .buy:hover {
+            background-color: gray;
+        }
+        .description {
+            margin-top: 3rem;
+        }
+        .title-payment {
+            text-align: center;
+        }
+        footer {
+            background-color: #222831;
+            color: black;
+            border-radius: 2rem;
+            padding: 1rem;
+        }
+        .logo-payment {
+            
+            gap: 2em;
+            border-radius: 1rem;
+            height: 40px;
+            width: 40px;
+        }
+        .logo-placement {
+            align-content: center;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0);   }
+        }
+         @keyframes right {
+            from { opacity: 0; transform: translateX(-20px); }
+            to   { opacity: 1; transform: translateX(0);   }
+        }
+        @keyframes left {
+            from { opacity: 0; transform: translateX(20px); }
+            to   { opacity: 1; transform: translateX(0);   }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="" class="logo">
+        <nav>
+            <a href="http://localhost/webshirt/homepage.html" class="link">CATALOG</a>
+            <a href="http://localhost/webshirt/about.html" class="link">ABOUT</a>
+            <a href="http://localhost/webshirt/pagelogin.html" class="link">LOGIN</a>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <img src="point-removebg-preview.png" alt="" class="shirt_img">
+            <div class="product_detail">
+                <h1>POINT</h1>
+                <h5>Rp. 229,000</h5>
+                <h5>Size</h5>
+                <div class="size">
+                    <input type="radio" name="size" id="sz1" hidden>
+                    <label for="sz1" class="size_chart">S</label>
+                    <input type="radio" name="size" id="sz2" hidden>
+                    <label for="sz2" class="size_chart">M</label>
+                    <input type="radio" name="size" id="sz3" hidden>
+                    <label for="sz3" class="size_chart">L</label>
+                    <input type="radio" name="size" id="sz4" hidden>
+                    <label for="sz4" class="size_chart">XL</label>
+                </div>
+                <a href="http://localhost/webshirt/paymentsucces.html" class="buy">Buy Now !</a>
+                <h5 class="description">Dibangun dengan struktur yang rapi dan karakter kuat, Worldwide dibuat dari 100% katun yang memberikan rasa nyaman sekaligus kokoh saat dikenakan. Tekstur katunnya yang lembut dan bernapas memastikan kenyamanan maksimal, cocok untuk dipakai sepanjang hari. Dengan kualitas bahan yang terjaga, Worldwide menghadirkan perpaduan antara kesederhanaan yang timeless dan sentuhan refined bagi penggunanya.</h5>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3 class="title-payment">PAYMENT METHOD</h3>
+        <div class="logo-placement"> 
+            <img src="dana.jpg" alt="" class="logo-payment">
+            <img src="gopay.jpg" alt="" class="logo-payment">
+        </div>
+    </footer>
+</body>
+</html>
